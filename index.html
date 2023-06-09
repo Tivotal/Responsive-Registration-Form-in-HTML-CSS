@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form | Tivotal</title>
+
+    <!--css file-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Registration Form</header>
+
+      <form action="#" class="form">
+        <div class="input-box">
+          <label for="">Full Name</label>
+          <input type="text" placeholder="Enter Full Name" required />
+        </div>
+        <div class="input-box">
+          <label for="">Email Address</label>
+          <input type="email" placeholder="Enter Email Address" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label for="">Phone Number</label>
+            <input type="tel" placeholder="Enter Phone Number" required />
+          </div>
+          <div class="input-box">
+            <label for="">Date of Birth</label>
+            <input type="date" placeholder="Enter Date of Birth" required />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Select Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" name="gender" id="male" />
+              <label for="male">Male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" name="gender" id="female" />
+              <label for="female">Female</label>
+            </div>
+            <div class="gender">
+              <input type="radio" name="gender" id="other" />
+              <label for="other">Prefer not to say</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-box address">
+          <label for="">Address</label>
+          <input
+            type="text"
+            placeholder="Enter Street Address line 1"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Enter Street Address line 2"
+            required
+          />
+          <div class="column">
+            <div class="select-box">
+              <select name="" id="">
+                <option hidden>Country</option>
+                <option value="">India</option>
+                <option value="">America</option>
+                <option value="">Japan</option>
+                <option value="">Russia</option>
+              </select>
+            </div>
+            <input type="text" placeholder="Enter Your City" required />
+          </div>
+          <div class="column">
+            <input type="text" placeholder="Enter Your Region" required />
+            <input type="number" placeholder="Enter Postal Code" required />
+          </div>
+        </div>
+        <button>Register</button>
+      </form>
+    </section>
+  </body>
+</html>

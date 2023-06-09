@@ -1,0 +1,149 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4070f4;
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  position: relative;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container header {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+}
+
+.container .form {
+  margin-top: 30px;
+}
+
+.container .form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.container .form .input-box label {
+  color: #333;
+}
+
+.container .form .input-box input,
+.container .form .select-box {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+
+.container .form .input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.container .form .column {
+  display: flex;
+  gap: 15px;
+}
+
+.container .gender-box {
+  margin-top: 20px;
+}
+
+.container .gender-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.container .gender-box .gender-option,
+.container .gender-box .gender-option .gender {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.container .gender-box .gender-option .gender {
+  gap: 5px;
+}
+
+.container .gender-box .gender-option .gender input {
+  accent-color: #4070f4;
+  cursor: pointer;
+}
+
+.container .gender-box .gender-option .gender label {
+  cursor: pointer;
+  color: #707070;
+}
+
+.container .form .address input,
+.container .form .address .select-box {
+  margin-top: 15px;
+}
+
+.container .form .address .select-box select {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #707070;
+  font-size: 1rem;
+}
+
+.container .form button {
+  height: 55px;
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: #4070f4;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.container .form button:hover {
+  background: #2660ff;
+}
+
+@media (max-width: 500px) {
+  .container .form .column {
+    flex-wrap: wrap;
+  }
+
+  .container .form .gender-box .gender-option,
+  .container .form .gender-box .gender-option .gender {
+    gap: 15px;
+  }
+}
